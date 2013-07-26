@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>abcsofbeijing</title>
+		<link rel="shortcut icon" type="image/png" href="images/favIcon.png" />
+	
+		<!-- external css file -->
+		<link rel="stylesheet" type="text/css" href="index_styles.css">
+		
+		<!-- include jQuery library -->
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		
+		<!-- include Cycle plugin -->
+		<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.slideshow').cycle({
+					fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+					speed: 500, // choose speed, 300 - 2000, slow, fast
+					next:'.slideshow'
+				});
+			});
+		</script>		
+
+	</head>
+
+	<body>
+						<!--  *********************************************************** NAVIGATION  *********************************************************** -->
+	<div id="navBar"> 
+			<ul>
+				<li><a class = nav href ="maybe.html">WORK</a></li>
+				<img id="divider" src="images/divider.png"/>
+				<li><a class = nav href ="index.html"><img id="navLogo" src="images/nav_logo.png" height="38" width="32"></a></li>
+				<img id="divider" src="images/divider.png"/>
+				<li><a class = nav href ="play.html">PLAY</a></li>		
+			</ul>
+	</div>
+	
+					<!--  *********************************************************** PROJECTS  ********************************************************** -->
+	<div id="wrapper">
+	<table>		
+		<tr>
+			<td rowspan="2" class = "projectImage">	
+				<div class="slideshow">				
+					<img src="images/proj_abc_1.png"/>
+					<img src="images/proj_abc_2.png"/>
+					<img src="images/proj_abc_3.png"/>
+				</div>
+			</td>
+			<td class = "projectText" height="260px" colspan="3">	
+				<p class="title">ABCS OF BEIJING</p>
+				<p>Designed identity for an online woman's lifestyle magazine, chronicling the lives of a group of American-born Chinese women in Beijing.</p>		
+			</td>
+		</tr>
+		
+		<tr>
+			<td class="projectNav" style="text-align:right">
+				<a class="projectNavBtn" href="places.html">PREVIOUS PROJECT</a></td>
+			<td class="projectNav" style="text-align:right"><img id="divider" src="images/divider.png"/></td>
+			<td class="projectNav">
+				<a class="projectNavBtn" href="tomandjerry.html">NEXT PROJECT</a></td>
+		</tr>
+		
+		<tr><td colspan="4" class="divider"></td></tr>
+		<tr><td colspan="4" class="projectContact">	
+			<a class="contact" href ="mailto:hey@amburger.me" target="_blank"><img src="images/contact_mail.png"/></a>
+			<a class="contact" href="http://www.linkedin.com/pub/amber-le/1b/4a9/34" target="_blank"><img src="images/contact_linkedin.png"/></a>
+			<a class="contact" href="https://github.com/Amburger816" target="_blank"><img src="images/contact_github.png"/></a>
+			<a class="contact" href="http://www.amburger816.tumblr.com" target="_blank"><img src="images/contact_tumblr.png"/></a>
+			<a class="contact" href="https://twitter.com/amburger816/" target="_blank"><img src="images/contact_twitter.png"/></a>
+		</td></tr>
+		
+	</table>
+	</div>
+	
+	</body>
+</html>

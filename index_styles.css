@@ -1,0 +1,179 @@
+/*  ------------------------------------------------ GENERAL ----------------------------------------------------- */
+body {
+	background:white;
+}
+#wrapper {
+	position:relative; /* needed for footer positioning*/
+	margin:140px auto 0px auto; /* center, not in IE5 */
+	width:750px;
+	border:0px solid yellow;
+}
+
+/*  ------------------------------------------------ PROJECTS ----------------------------------------------------- */
+td.projectImage {
+    height: 356px;  
+    width: 450px;  
+	padding:0px 150px 110px 0px;
+}
+.slideshow {  
+    height: 356px;  
+    width: 450px;  
+    padding: 0;  
+    margin:  0;  
+} 
+.slideshow img {  
+    top:  0; 
+    left: 0 
+} 
+
+td.projectText {
+	padding-left:15px;
+}
+p.title{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:14px;
+	font-weight: 400;
+	text-align:left;
+	line-height:120%;
+}
+p{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:13px;
+	line-height:120%;
+	font-weight: 100;
+	text-align:left;
+	max-width:450px;
+}
+p.center{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:13px;
+	line-height:120%;
+	font-weight: 100;
+	text-align:center;
+	max-width:450px;
+	margin: 0 auto;
+}
+p.large {
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:24px;
+	line-height:120%;
+	font-weight: 500;
+	text-align:center;
+	padding-top: 15px;
+	margin: auto;
+	max-width:480px;
+	padding-left:10px;
+	margin: 0 auto;
+}
+
+td.projectNav {
+	vertical-align: top;
+	padding-left:10px;
+	border:0px solid;
+}
+a.projectNavBtn{
+	opacity:0.6;
+	color: black;
+	font-family:"Gill Sans";
+	font-size:10px;
+	font-weight: 100;
+	text-decoration:none;
+} 
+a.projectNavBtn:hover,a.projectNavBtn:active {
+	opacity:1;
+}  
+
+td.divider {
+	border-bottom:1px solid gray;
+	padding: 5px 0px 20px 0px;
+	opacity: 0.5;
+}
+td.projectContact {
+	text-align:center;
+	padding: 20px 0px 5px 0px;
+}
+
+a.generalLink{
+	opacity:1;
+	color: black;
+} 
+a.generalLink:link,a.generalLink:visited {
+	text-decoration:none;
+	border-bottom: 1px Solid #bebebe;
+	/*background:url(navBtn_default.png) no-repeat*/
+}    
+a.generalLink:hover,a.generalLink:active {
+	opacity:0.5;
+	text-decoration:none;
+	border-bottom: 0px Solid ;
+	/*color:#ffcc00;
+	background:url(navBtn_rollover.png) no-repeat*/
+}  
+
+/*  ------------------------------------------------ NAVIGATION ----------------------------------------------------- */
+img#divider{
+	vertical-align:middle;
+	opacity: 0.5;
+}
+
+img#navLogo{
+	vertical-align:middle;
+}
+ul {
+	margin: 32px 0px;
+	text-align:center;
+}
+li {
+	list-style-type:none;
+	display:inline;
+	text-align:center;
+	padding:20px;
+} 
+a.nav{
+	color: black;
+	font-family:"Gill Sans";
+	font-size:16px;
+	font-weight: 100;
+	background-color:;
+	text-align:center;
+	padding:20px 10px;
+	text-decoration:none;
+} 
+a.nav:hover,a.nav:active {
+	opacity:0.6;
+}  
+#navBar {
+	position:fixed;
+	width:100%;
+	height:100px;
+	left: 0px;
+	top:0px;
+	background-color: #f1f1f1;
+	z-index: 25;
+	opacity:0.9;
+	border-bottom:1px solid gray;
+}
+
+/*  ------------------------------------------------ CONTACT ICONS ----------------------------------------------------- */
+a.contact:link,a.contact:visited {opacity:0.6;}    
+a.contact:hover,a.contact:active {opacity:1;}  
+
+
+/*  ------------------------------------------------ EXPLORATION ----------------------------------------------------- */
+table#play {
+
+	margin: 0px 100px;
+	border-spacing: 10px;
+}
+
+td.thumbnail {
+    height: 140px;  
+    width: 270px;  
+	background:#e0e0e0;
+}
+
+

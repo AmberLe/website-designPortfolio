@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>hand-drawn maps</title>
+		<style type="text/css">
+		
+		div#container {
+			position:relative; /* needed for footer positioning*/
+			margin:0 auto; /* center, not in IE5 */
+			width:610px;
+			height:auto !important; /* real browsers */
+			height:100%; /* IE6: min-height*/
+			min-height:100%; /* real browsers */
+			border:px solid yellow;
+		}
+
+
+		img#maps {
+			border: 1px solid #990000;
+			border-top-width:5px;
+			margin: 10px;
+			display: inline;
+		}
+		
+		.hoverMap img{
+			-webkit-transform:scale(1); /*Webkit:  original size*/
+			-moz-transform:scale(1); /*Mozilla scale version*/
+			-o-transform:scale(1); /*Opera scale version*/
+			-webkit-transition-duration: 0.25s; /*Webkit: Animation duration*/
+			-moz-transition-duration: 0.25s; /*Mozilla duration version*/
+			-o-transition-duration: 0.25s; /*Opera duration version*/
+			opacity: 0.8; /*initial opacity of images*/
+		}
+
+		.hoverMap img:hover{
+			-webkit-transform:scale(1.05); /*Webkit: Scale up from original size*/
+			-moz-transform:scale(1.05); /*Mozilla scale version*/
+			-o-transform:scale(1.05); /*Opera scale version*/
+			box-shadow:0px 3px 5px gray; /*CSS3 shadow: 30px blurred shadow all around image; #left/right, #top/bottom, #distance*/
+			-webkit-box-shadow:0px 3px 5px gray; /*Safari shadow version*/
+			-moz-box-shadow:0px 3px 5px gray; /*Mozilla shadow version*/
+			opacity: 1;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+	
+	<div id="container">
+		<table>
+		<tr> 
+		<td>
+			<div class="hoverMap">
+			<img id="maps" src="images/map_7.png" alt= "map_7" width="175px">
+			<img id="maps" src="images/map_2.png" alt= "map_2" width="175px">
+			<img id="maps" src="images/map_1.png" alt= "map_1" width="175px">
+			</div>
+		</td>
+		<td>
+			<div class="hoverMap">
+			<img id="maps" src="images/map_4.png" alt= "map_4" width="175px">
+			<img id="maps" src="images/map_5.png" alt= "map_5" width="175px">
+			<img id="maps" src="images/map_6.png" alt= "map_6" width="175px">
+			<img id="maps" src="images/map_10.png" alt= "map_10" width="175px">
+			</div>
+		</td>
+		<td>
+			<div class="hoverMap">
+			<img id="maps" src="images/map_3.png" alt= "map_3" width="175px">
+			<img id="maps" src="images/map_8.png" alt= "map_8" width="175px">
+			<img id="maps" src="images/map_9.png" alt= "map_9" width="175px">
+			</div>
+		</td>
+	</table>
+	</div>
+	</body>
+
+</html>
