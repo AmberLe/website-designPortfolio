@@ -16,6 +16,7 @@
 			border: 0px solid black;
 		}
 		
+		/*  ------------------------------------------------ INTRO ----------------------------------------------------- */
 		p {
 			color:#000000;
 			font-family:"Gill Sans";
@@ -40,16 +41,46 @@
 			max-width:480px;
 			padding-left:10px;
 		}
+		#lineDivider {
+			width: 200px;
+			border-bottom:2px solid gray;
+		} /*horizontal line*/
+		#home_img_arrows{
+			z-index: 10;
+			position: absolute;
+			margin: 0 auto; 
+			animation:arrowAnim 0.001s none;
+			-webkit-animation:arrowAnim 5s infinite; /* Safari and Chrome */
+		}
+		@keyframes arrowAnim{
+			0%   {top:590px;}
+			40%  {top:620px;}
+			100% {top:590px;}
+		}
+		@-webkit-keyframes arrowAnim /* Safari and Chrome */ {
+			0%   {top:590px;}
+			40%  {top:620px;}
+			100% {top:590px;}
+		}
+		@-moz-keyframes arrowAnim /* Mozilla Firefox */ {
+			0%   {top:590px;}
+			40%  {top:620px;}
+			100% {top:590px;}
+		}
+		@-moz-keyframes arrowAnim /* Opera */ {
+			0%   {top:590px;}
+			40%  {top:620px;}
+			100% {top:590px;}
+		}
 		
 		/*  ------------------------------------------------ NAVIGATION ----------------------------------------------------- */
-		img#divider{
-			vertical-align:middle;
-			opacity: 0.5;
-		}
-
 		img#navLogo{
 			vertical-align:middle;
 		}
+		#navDivider {
+			vertical-align:middle;
+		}
+		
 		ul {
 			margin: 32px 0px;
 			text-align:center;
@@ -73,29 +104,8 @@
 		a.nav:hover,a.nav:active {
 			opacity:0.6;
 		}  
-		#navBar {
-			position:fixed;
-			width:100%;
-			height:100px;
-			left: 0px;
-			top:275px;
-			background-color: white;
-			z-index: 25;
-			opacity:0.9;
-			border:0px solid gray;
-			z-index:-10;
-		}
-		#contact_icons {
-			z-index:-10;
-		}
-		a.contact:link,a.contact:visited {opacity:0.6;}    
-		a.contact:hover,a.contact:active {opacity:1;}  
-		
-		#lineDivider {
-			width: 200px;
-			border-bottom:2px solid gray;
-		}
-		
+
+		/*  ------------------------------------------------ LINKS ----------------------------------------------------- */
 		a.linkHome_blk{
 			opacity:1;
 			color: black;
@@ -122,7 +132,6 @@
 		a.linkHome_wht:hover,a.linkHome_wht:active {
 			opacity:0.6;
 		}  
-
 	</style>
 	
 </head>
@@ -132,6 +141,8 @@
 	<!--  *********************************************************** NAVIGATION  *********************************************************** -->
 
 	<div id="skrollr-body">	
+		
+	
 		<div id="home_name1" 
 				data-0="opacity:1;top:220px; left:240px;" 
 				data-100="opacity:1;top:210px; left:240px;" 
@@ -151,6 +162,12 @@
 				data-2500="opacity:0;top:180px; left:240px;">
 			<img src="images/home_img_00_name2.png"/>
 		</div>	
+		
+		<div id="home_arrows"
+			data-10="opacity:1; left:490px;"
+			data-200="opacity:0; left:490px;">
+			<img id="home_img_arrows" src="images/home_img_arrows.png" width="28" height="55">
+		</div>
 		
 		<div id="lineDivider"				
 				data-450="opacity:0;top:320px;left:-200px;" 
@@ -237,14 +254,14 @@
 			<img src="images/home_img_08.png"/>
 		</div>
 		
-		<div id="end" 
+		<div id="endNav" 
 				data-5500="opacity:0;top:350px;left:380px;" 
 				data-6000="opacity:1;top:350px;left:380px;" 
 			<ul>
 				<li><a class = nav href ="maybe.html">WORK</a></li>
-				<img id="divider" src="images/divider.png"/>
+				<img id="navDivider" src="images/divider.png"/>
 				<li><a class = nav href ="index.html"><img id="navLogo" src="images/nav_logo.png" height="38" width="32"></a></li>
-				<img id="divider" src="images/divider.png"/>
+				<img id="navDivider" src="images/divider.png"/>
 				<li><a class = nav href ="play.html">PLAY</a></li>			
 			</ul>
 		</div>
