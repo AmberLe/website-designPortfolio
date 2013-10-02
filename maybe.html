@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/png" href="images/favIcon.png" />
 	
 		<!-- external css file -->
-		<link rel="stylesheet" type="text/css" href="index_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!-- include jQuery library -->
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -18,7 +18,7 @@
 			$(document).ready(function() {
 				$('.slideshow').cycle({
 					fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-					speed: 500, // choose speed, 300 - 2000, slow, fast
+					speed: 300, // choose speed, 300 - 2000, slow, fast
 					next:'.slideshow'
 				});
 			});
@@ -30,16 +30,16 @@
 						<!--  *********************************************************** NAVIGATION  *********************************************************** -->
 	<div id="navBar"> 
 			<ul>
-				<li><a class = nav href ="maybe.html">WORK</a></li>
-				<img id="divider" src="images/divider.png"/>
+				<li><a class = nav href ="work.html">WORK</a></li>
+				<img id="divider" src="images/nav_divider.png"/>
 				<li><a class = nav href ="index.html"><img id="navLogo" src="images/nav_logo.png" height="38" width="32"></a></li>
-				<img id="divider" src="images/divider.png"/>
+				<img id="divider" src="images/nav_divider.png"/>
 				<li><a class = nav href ="play.html">PLAY</a></li>			
 			</ul>
 	</div>
 					
 					<!--  *********************************************************** PROJECTS  ********************************************************** -->
-	<div id="wrapper">
+	<div id="projectContainer_print">
 	<table>		
 		<tr>
 			<td rowspan="2" class = "projectImage">		
@@ -47,20 +47,21 @@
 					<img src="images/proj_maybe.png"/>
 				</div>
 			</td>
-			<td class = "projectText" height="340px" colspan="3">
-				<p class="title">MAYBE</p>
-				<p class="narrow">Lyrics from <i>High Hopes</i> from the album, <i>Rhythm and Repose</i>, by the talented Irish folk musician, <a class = generalLink href ="http://www.glenhansardmusic.com/songofgoodhope/" target="_blank">Glen Hansard<a>. </p>
+			<td class = "projectText" height="335px" colspan="3">
+				<p class="projectTitle">MAYBE</p>
+				<p class="projectDescription">Lyrics from <i>High Hopes</i> from the album, <i>Rhythm and Repose</i>, by the talented Irish folk musician, <a class = generalLink href ="http://www.glenhansardmusic.com/songofgoodhope/" target="_blank">Glen Hansard<a>. </p>
 			</td>
 		</tr>
 		
 		<tr>
 			<td class="projectNav" style="text-align:right">
-				<a class="projectNavBtn" href=""></a></td>
-			<td class="projectNav" style="text-align:right"><img id="divider" src="images/divider.png"/></td>
+				<a class="projectNavLink" href=""></a></td>
+			<td class="projectNav" style="text-align:right"><img id="divider" src="images/nav_divider.png"/></td>
 			<td class="projectNav">
-				<a class="projectNavBtn" href="curiousgeorge.html">NEXT <br>PROJECT</a></td>
+				<a class="projectNavLink" href="curiousgeorge.html">NEXT <br>PROJECT</a></td>
 		</tr>
 		
+					<!--  *********************************************************** CONTACT  ********************************************************** -->
 		<tr><td colspan="4" class="divider"></td></tr>
 		<tr><td colspan="4" class="projectContact">	
 			<a class="contact" href ="mailto:hey@amburger.me" target="_blank"><img src="images/contact_mail.png"/></a>

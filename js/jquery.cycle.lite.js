@@ -226,10 +226,10 @@ $.fn.cycle.defaults = {
     next:          null,
     pause:         false,
     prev:          null,
-    speed:         1000,
+    speed:         300,
     slideExpr:     null,
     sync:          true,
-    timeout:       4000
+    timeout:       1500
 };
 
 })(jQuery);

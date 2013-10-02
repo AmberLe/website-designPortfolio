@@ -1,0 +1,284 @@
+/*  ------------------------------------------------ GENERAL ----------------------------------------------------- */
+html,body {
+	margin:0;
+	padding:0;
+	height:100%; /* needed for container min-height */
+	background:white;
+	background-image:url("bkgd.png");
+	background-repeat:repeat;
+	background-attachment:fixed;
+	background-position:center; 
+}
+
+div#container {
+	position:relative; /* needed for footer positioning*/
+	margin:0 auto; /* center, not in IE5 */
+	width:600px;
+	
+	height:auto !important; /* real browsers */
+	height:100%; /* IE6: min-height*/
+
+	min-height:100%; /* real browsers */
+	border:0px solid yellow;
+}
+td {
+	text-align:center;
+	border:0px solid; /* BORDER ******************************* */
+	padding-top:70px;
+	padding-bottom:70px;
+	opacity:.99;
+}
+td.noPadding {
+	padding-top:0px;
+	border:0px solid blue; 
+	padding-bottom:0px;
+}
+
+p{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:14px;
+	font-weight: 100;
+	text-align:center;
+	padding-top: 15px;
+	margin: auto;
+	max-width:450px;
+}
+p.target{
+	color:#ffffff;
+	font-family:"Gill Sans";
+	font-size:8px;
+	font-weight: 100;
+	text-align:left;
+	line-height:120%;
+	margin:0px;
+}
+
+a.generalLink{
+	opacity:1;
+	color: black;
+} 
+a.generalLink:link,a.generalLink:visited {
+	text-decoration:none;
+	border-bottom: 1px Solid #bebebe;
+	/*background:url(navBtn_default.png) no-repeat*/
+}    
+a.generalLink:hover,a.generalLink:active {
+	opacity:0.5;
+	text-decoration:none;
+	border-bottom: 0px Solid ;
+	/*color:#ffcc00;
+	background:url(navBtn_rollover.png) no-repeat*/
+}  
+
+
+/*  ------------------------------------------------ NAVIGATION ----------------------------------------------------- */
+ul.nav{
+	position:fixed;
+	width:780px;
+	padding:10px;
+	top:50px;
+	list-style-type:none;
+	display:block;
+	text-align:center;
+} 
+li.navLogo {
+	display:inline;
+	width:500px;
+	float:left;
+	text-align:center;
+	opacity:1;
+	margin-top:0px;
+	} 
+	
+a.nav{opacity:1;} 
+a.nav:hover {opacity:0.5;}  
+
+img.navLogo {
+	position:absolute;
+	top:0px;
+	z-index:-1;
+	text-align:center;
+}
+
+#navBar {
+	position:fixed;
+	width:100%;
+	height:50px;
+	top:-18px; /* stick to top */
+	margin:0 auto; 
+	background-color:#990000;
+	z-index: 25;
+	opacity:0.8;
+	text-align:center;
+	border: 1px solid #990000;
+	border-top-width:20px;		
+	-webkit-transform:scale(1); /*Webkit:  original size*/
+	-moz-transform:scale(1); /*Mozilla scale version*/
+	-o-transform:scale(1); /*Opera scale version*/
+	-webkit-transition-duration: 0.25s; /*Webkit: Animation duration*/
+	-moz-transition-duration: 0.25s; /*Mozilla duration version*/
+	-o-transition-duration: 0.25s; /*Opera duration version*/
+}
+#navBar:hover{
+	-webkit-transform:translate(0px,10px); /*Webkit: Scale, rotate, translate*/
+	-moz-transform:translate(0px,10px); /*Mozilla scale version*/
+	-o-transform:translate(0px,10px); /*Opera scale version*/
+}
+	
+/*  -------------------------------------------------------- HOME ------------------------------------------------------  */
+
+img#home{
+	position:absolute;
+	left:0px;
+	top:150px;
+	z-index:-1;
+}
+
+p#homeLeft{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:18px;
+	font-weight: 100;
+	text-align:center;
+	width:280px;
+	margin-top: -175px;
+	margin-left: 45px;
+	line-height:120%;
+}
+span#blue{
+	color:#21305e;
+	font-weight: 500;
+}
+span#small {
+	font-size:10px;
+}
+
+
+p#homeRight{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:14px;
+	font-weight: 100;
+	text-align:center;
+	max-width:230px;
+	margin-left: 0px;
+	margin-top: 60px;
+	line-height:120%;
+}
+
+
+
+/*  ------------------------------------------------ PROJECTS  ----------------------------------------------------- */
+
+p.title{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:14px;
+	font-weight: 400;
+	text-align:center;
+}
+
+/*  --------------------------------------------------- CLIENTS  ---------------------------------------------------  */
+
+		.hoverClient img{
+			-webkit-transform:scale(1); /*Webkit:  original size*/
+			-moz-transform:scale(1); /*Mozilla scale version*/
+			-o-transform:scale(1); /*Opera scale version*/
+			-webkit-transition-duration: 0.25s; /*Webkit: Animation duration*/
+			-moz-transition-duration: 0.25s; /*Mozilla duration version*/
+			-o-transition-duration: 0.25s; /*Opera duration version*/
+			opacity: 1; /*initial opacity of images*/
+		}
+
+		.hoverClient img:hover{
+			-webkit-transform:scale(1.1); /*Webkit: Scale, rotate x/y use "deg", */
+			-moz-transform:scale(1.1); /*Mozilla scale version*/
+			-o-transform:scale(1.1); /*Opera scale version*/
+			/*box-shadow:0px 3px 5px gray; CSS3 shadow: 30px blurred shadow all around image; #left/right, #top/bottom, #distance*/
+			/*-webkit-box-shadow:0px 3px 5px gray; Safari shadow version*/
+			/*-moz-box-shadow:0px 3px 5px gray; Mozilla shadow version*/
+			opacity: 1;
+		}
+
+/*  --------------------------------------------------- CONTACT  ---------------------------------------------------  */
+img#contact{
+	position:absolute;
+	left:0px;
+	top:1555px;
+	z-index:-1;
+}
+
+p.contact{
+	color:#ffffff;
+	font-family:"Gill Sans";
+	font-size:12px;
+	font-weight: 100;
+	text-align:center;
+	opacity:1;
+	margin-top:0px;
+}
+
+p#contactLeft{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:14px;
+	font-weight: 100;
+	text-align:right;
+	width:225px;
+	margin-top: 300px;
+	line-height:150%;
+}
+p#contactRight{
+	color:#000000;
+	font-family:"Gill Sans";
+	font-size:14px;
+	font-weight: 100;
+	text-align:left;
+	max-width:205px;
+	margin-left: 40px;
+	margin-top: 225px;
+	line-height:120%;
+}
+
+a.email{
+	opacity:1;
+	text-decoration:none;
+	color: black;
+}
+a.email:link,a.email:visited {
+	text-decoration:none;
+}
+a.email:hover,a.email:active {
+	text-decoration:none;
+	opacity:0.5;
+}
+
+a.contact{
+	opacity:1;
+	float: right;
+	z-index:25;
+} 
+a.contact:link,a.contact:visited {
+	text-decoration:none;
+}    
+a.contact:hover,a.contact:active {
+	opacity:0.7;
+	text-decoration:none;
+}  
+
+div#footer {
+	position:fixed;
+	width:100%;
+	height: 15px;
+	left:0; 
+	bottom:0; /* stick to bottom */
+	background-color:#990000;
+	z-index:25;
+	opacity:0.8;
+	border-top: 0px solid white;
+}
+
+
+
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>navigation</title>
+		<link rel="shortcut icon" type="image/png" href="favIcon.png" />
+		<!-- external css file -->
+		<link rel="stylesheet" type="text/css" href="index_styles.css">
+		
+		<!-- include jQuery library -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+		
+		<!-- include Cycle plugin -->
+		<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+		
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('.slideshow').cycle({
+					fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+					speed: 500, // choose speed, 300 - 2000, slow, fast
+					next:'.slideshow'
+				});
+			});
+		</script>
+		<script>
+			function client1_rollover(){
+			document.getElementById('client1').src="images/client_01_hover.png";}
+			function client1_default(){
+			document.getElementById('client1').src="images/client_01.png";}
+
+			function client2_rollover(){
+			document.getElementById('client2').src="images/client_02_hover.png";}
+			function client2_default(){
+			document.getElementById('client2').src="images/client_02.png";}
+
+			function client3_rollover(){
+			document.getElementById('client3').src="images/client_03_hover.png";}
+			function client3_default(){
+			document.getElementById('client3').src="images/client_03.png";}
+
+			function client4_rollover(){
+			document.getElementById('client4').src="images/client_04_hover.png";}
+			function client4_default(){
+			document.getElementById('client4').src="images/client_04.png";}
+
+			function client5_rollover(){
+			document.getElementById('client5').src="images/client_05_hover.png";}
+			function client5_default(){
+			document.getElementById('client5').src="images/client_05.png";}
+
+			function client6_rollover(){
+			document.getElementById('client6').src="images/client_06_hover.png";}
+			function client6_default(){
+			document.getElementById('client6').src="images/client_06.png";}
+
+			function client7_rollover(){
+			document.getElementById('client7').src="images/client_07_hover.png";}
+			function client7_default(){
+			document.getElementById('client7').src="images/client_07.png";}
+
+			function client8_rollover(){
+			document.getElementById('client8').src="images/client_08_hover.png";}
+			function client8_default(){
+			document.getElementById('client8').src="images/client_08.png";}
+
+			function client9_rollover(){
+			document.getElementById('client9').src="images/client_09_hover.png";}
+			function client9_default(){
+			document.getElementById('client9').src="images/client_09.png";}
+		</script>
+		
+
+	</head>
+
+	<body>
+
+	
+						<!--  *********************************************************** NAVIGATION  *********************************************************** -->
+	<div id="navBar"> 
+			<a class = nav href ="#Projects"><img src="images/navProj.png"></a>
+			<img src="images/navDiv.png" height="40">
+			<a class = nav href ="#Clients"><img src="images/navClients.png" height="40"></a>
+			<a class = nav href ="#Home"><img src="images/navLogo.png" height="44"></a>
+			<a class = nav href ="http://www.amburger816.tumblr.com/" target="_blank"><img src="images/navBlog.png" height="40"></a>
+			<img src="images/navDiv.png" height="40">
+			<a class = nav href ="#Contact"><img src="images/navContact.png" height="40"></a>		
+	</div>
+
+	
+	<div id="container">
+					<!--  *********************************************************** HOME  *********************************************************** -->
+		
+	<table>
+		<tr><td class="noPadding">	
+			<p class = target><a id="Home" style="background:"></a></p>
+		</td></tr>
+		<tr><td class="noPadding">
+			<div id="filler" style="height:230px;width:600px;background:beige;opacity:0"></div>
+		</td></tr>	
+		<tr><td class="noPadding">	
+			<img id="home" src="images/about.png" width="600px" height="450">
+		</td></tr>
+		<tr><td>
+			<table>				
+			<tr>	
+				<td class="noPadding">
+					<p id="homeLeft">Hello! My name is <br> <span id="blue">AMBER LE</span>.<br><br>I am a <span id="blue">DESIGNER</span>, <br>a <span id="blue">DEVELOPER</span>, <br>and a <span id="blue">DELIGHT </span><span id="small">(usually)</span>.</p>
+				</td>
+			
+				<td class="noPadding">
+					<p id="homeRight">If you visited this site<br>expecting to see burgers, <br>I am sorry to disappoint.<br><br>This is my 
+					<a class = generalLink href ="#Projects">portfolio</a>. 
+					<br>Please take a look around.</p>
+				</td>
+			</tr>	
+			</table>
+		</td></tr>
+		<tr><td class="noPadding">
+			<div id="filler" style="height:100px;width:600px;background:beige;opacity:0"></div>
+
+				<!--  *********************************************************** CLIENTS  *********************************************************** -->
+	
+		<tr><td class="noPadding">	
+			<p class = target><a id="Clients"></a></p></tr>
+		</td></tr>
+		
+		<tr><td class="noPadding">	
+			<div id="filler" style="height:120px;width:50px;background:white;"></div>
+		</td></tr>
+	
+				<tr>
+					<td class="noPadding">
+					<div class="hoverClient">
+					<img id="client1" onmouseover="client1_rollover()" onmouseout="client1_default()" src="images/client_01.png" width="144" height="115">
+					<img id="client2" onmouseover="client2_rollover()" onmouseout="client2_default()" src="images/client_02.png" width="144" height="115">
+					<img id="client3" onmouseover="client3_rollover()" onmouseout="client3_default()" src="images/client_03.png" width="144" height="115">
+					</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="noPadding">
+					<div class="hoverClient">
+					<img id="client4" onmouseover="client4_rollover()" onmouseout="client4_default()" src="images/client_04.png" width="144" height="115">
+					<img id="client5" onmouseover="client5_rollover()" onmouseout="client5_default()" src="images/client_05.png" width="144" height="115">
+					<img id="client6" onmouseover="client6_rollover()" onmouseout="client6_default()" src="images/client_06.png" width="144" height="115">
+					</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td class="noPadding">
+					<div class="hoverClient">
+					<img id="client7" onmouseover="client7_rollover()" onmouseout="client7_default()" src="images/client_07.png" width="144" height="115">
+					<img id="client8" onmouseover="client8_rollover()" onmouseout="client8_default()" src="images/client_08.png" width="144" height="115">
+					<img id="client9" onmouseover="client9_rollover()" onmouseout="client9_default()" src="images/client_09.png" width="144" height="115">
+					</div>
+					</td>
+				</tr>			
+		</td></tr>
+		
+		<tr><td class="noPadding">	
+			<p class="title"> Meet the cast of characters  </p><p>I’ve had the pleasure of working with some of my favorite childhood brands.
+			Due to legal reasons, I cannot publish all my work, but I would be more than happy to show you if you <a class = email href ="mailto:hey@amburger.me" target="_blank">contact me.</a></p>
+		</td></tr>
+		
+		<tr><td class="noPadding">	
+			<div id="filler" style="height:55px;width:600px;background:beige;opacity:0"></div>
+		</td></tr>
+	
+						<!--  *********************************************************** CONTACT  *********************************************************** -->
+		
+		<tr>	<td class="noPadding">	
+			<p class = target><a id="Contact"></a></p></tr>
+		</td></tr>
+		
+		<tr><td>	
+			<img id="contact" src="images/contact.png" width="600px" height="450">
+		</td></tr>
+
+		<table>	
+		<tr>	
+			<td class="noPadding" style="height:150px">
+				<p id="contactLeft"><a class = generalLink href ="mailto:hey@amburger.me" target="_blank">hey@amburger.me</a><br>(310) 210-0294</p>	<br>
+				<a class = contact href ="http://www.linkedin.com/pub/amber-le/1b/4a9/34" target="_blank" ><img src="images/contact_linkedIn.png" height="28" width="28"></a>
+				<a class = contact href ="https://twitter.com/amburger816/" target="_blank"><img src="images/contact_twitter.png" height="28" width="28"></a>	
+				<a class = contact href ="http://www.amburger816.tumblr.com/" target="_blank"><img src="images/contact_tumblr.png" height="28" width="28"></a>
+			</td>
+			
+			<td class="noPadding">
+				<p id="contactRight" style=text-align:left;>
+				I am a graphic designer & front-end developer, but above all, I consider myself a problem solver, who finds solutions in pixel-perfect designs and efficient code.<br><br>
+				
+				When I am not working, I enjoy <a class = generalLink href ="http://www.downtownboathouse.org/" target="_blank">kayaking<a>, even in the dirty Hudson, collecting <a class = generalLink href ="http://www.grownyc.org/compost/locations/" target="_blank">compost<a>, and learning <br><a class = generalLink href ="http://lifeprint.com/" target="_blank">sign language <a> from online videos.
+			</td>
+		</tr>	
+		</table>	
+		
+		<tr><td class="noPadding">	
+			<div id="filler" style="height:250px;width:600px;background:beige;opacity:0"></div>
+		</td></tr>
+	</table>
+	</div>
+	
+	<div id="footer"></div>
+	
+	
+	</body>
+</html>

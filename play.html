@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/png" href="images/favIcon.png" />
 	
 		<!-- external css file -->
-		<link rel="stylesheet" type="text/css" href="index_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!-- include jQuery library -->
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -23,51 +23,53 @@
 				});
 			});
 		</script>		
-
 	</head>
 
 	<body>
 						<!--  *********************************************************** NAVIGATION  *********************************************************** -->
 	<div id="navBar"> 
 			<ul>
-				<li><a class = nav href ="maybe.html">WORK</a></li>
-				<img id="divider" src="images/divider.png"/>
+				<li><a class = nav href ="work.html">WORK</a></li>
+				<img id="divider" src="images/nav_divider.png"/>
 				<li><a class = nav href ="index.html"><img id="navLogo" src="images/nav_logo.png" height="38" width="32"></a></li>
-				<img id="divider" src="images/divider.png"/>
+				<img id="divider" src="images/nav_divider.png"/>
 				<li><a class = nav href ="play.html">PLAY</a></li>			
 			</ul>
 	</div>
 					
-					<!--  *********************************************************** PROJECTS  ********************************************************** -->
-	<div id="wrapper">
-	<p class="large">COMING SOON! (too busy playing)</p><br>
-	<p class="center">This section will feature some of my examples of front end development as well as credit 
-	those artists who inspire me and those coding wizards who teach me. <br>Please check back again later.</p><br>
+					<!--  *********************************************************** PLAY  ********************************************************** -->
 
 	<table id="play">		
+			<tr>
+				<td height="170px" colspan="3">
+					<p id="large">IN PROGRESS (too busy playing)</p>
+					<p class="center">This section contains a hodgepodge of coding exercises and <br>unfinished mini projects. There isn't much right now, but please check <br>back again soon for updates</p>
+				</td>
+			</tr>
+	
 		<tr>
-			<td class = "thumbnail">	
-				<div><p class="center">:^D</p></div>
+			<td class = "thumbnail" id="yellow">	
+				<div><p class="center"><a class = nav href ="play_figureCaptions/figureCaptions.html" target="_blank">FIGURE CAPTIONS</a><br><br>one of many website iterations <br>with hovering captions</p></div>
 			</td>
-			<td class = "thumbnail">	
-				<div><p class="center">&-\</p></div>
+			<td class = "thumbnail" id="teal">	
+				<div><p class="center"><a class = nav href ="play_paperCurtains/paperCurtains.html" target="_blank">PAPER CURTAINS</a><br><br>subtle rotation <br>with CSS animations</p></div>
 			</td>
-			<td class = "thumbnail">	
-				<div><p class="center">#:{</p></div>
+			<td class = "thumbnail" id="orange">	
+				<div><p class="center"><a class = nav href ="play_showerBeer/showerBeer.html" target="_blank">SHOWER BEER</a><br><br>parallax using JavaScript <br>(still buggy)</a></p></div>
 			</td>
 		</tr>	
 		<tr>
-			<td class = "thumbnail">	
-				<div><p class="center">8-)</p></div>
+			<td class = "thumbnail" id="orange">	
+				<div><p class="center"><a class = nav href ="play_navigation/navigation.html" target="_blank">NAVIGATION</a><br><br>yet another website iteration with <br>sliding nav and sticky footer</p></div>
 			</td>
-			<td class = "thumbnail">	
-				<div><p class="center">;~P</p></div>
+			<td class = "thumbnail" id="yellow" >	
+				<div><p class="center">MORE TO COME</p></div>
 			</td>
-			<td class = "thumbnail">	
-				<div><p class="center">%^?</p></div>
+			<td class = "thumbnail" id="teal">	
+				<div><p class="center">:D</p></div>
 			</td>
 		</tr>	
-
+	<table>
 		<tr><td colspan="3" class="divider"></td></tr>
 		<tr><td colspan="3" class="projectContact">	
 			<a class="contact" href ="mailto:hey@amburger.me" target="_blank"><img src="images/contact_mail.png" /></a>

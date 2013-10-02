@@ -7,7 +7,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>Amber Le</title>
+	<link rel="shortcut icon" type="image/png" href="images/favIcon.png" />
 	<link href="css/fixed-positioning.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<style>
 		#skrollr-body {
 			position: relative; 
@@ -15,306 +17,384 @@
 			margin: 0 auto; 
 			border: 0px solid black;
 		}
-		
-		/*  ------------------------------------------------ INTRO ----------------------------------------------------- */
-		p {
-			color:#000000;
-			font-family:"Gill Sans";
-			font-size:16px;
-			line-height:120%;
-			font-weight: 100;
-			text-align:center;
-			padding-top: 15px;
-			margin: auto;
-			max-width:480px;
-			padding-left:10px;
+		#homeBkgd {
+			width: 100%;
+			height: 100%;
+			background-color: #ffcc66;
 		}
-		p#large {
-			color:#000000;
-			font-family:"Gill Sans";
-			font-size:24px;
-			line-height:120%;
-			font-weight: 500;
-			text-align:center;
-			padding-top: 15px;
-			margin: auto;
-			max-width:480px;
-			padding-left:10px;
+		#homeBkgd2 {
+			width: 100%;
+			height: 100%;
+			background-color: #ffcc00;
 		}
-		#lineDivider {
-			width: 200px;
-			border-bottom:2px solid gray;
-		} /*horizontal line*/
-		#home_img_arrows{
-			z-index: 10;
-			position: absolute;
-			margin: 0 auto; 
-			animation:arrowAnim 0.001s none;
-			-webkit-animation:arrowAnim 5s infinite; /* Safari and Chrome */
-		}
-		@keyframes arrowAnim{
-			0%   {top:590px;}
-			40%  {top:620px;}
-			100% {top:590px;}
-		}
-		@-webkit-keyframes arrowAnim /* Safari and Chrome */ {
-			0%   {top:590px;}
-			40%  {top:620px;}
-			100% {top:590px;}
-		}
-		@-moz-keyframes arrowAnim /* Mozilla Firefox */ {
-			0%   {top:590px;}
-			40%  {top:620px;}
-			100% {top:590px;}
-		}
-		@-moz-keyframes arrowAnim /* Opera */ {
-			0%   {top:590px;}
-			40%  {top:620px;}
-			100% {top:590px;}
-		}
-		
-		/*  ------------------------------------------------ NAVIGATION ----------------------------------------------------- */
-		img#navLogo{
-			vertical-align:middle;
-		}
-		#navDivider {
-			vertical-align:middle;
-		}
-		
-		ul {
-			margin: 32px 0px;
-			text-align:center;
-		}
-		li {
-			list-style-type:none;
-			display:inline;
-			text-align:center;
-			padding:20px;
-		} 
-		a.nav{
-			color: black;
-			font-family:"Gill Sans";
-			font-size:16px;
-			font-weight: 100;
-			background-color:;
-			text-align:center;
-			padding:20px 10px;
-			text-decoration:none;
-		} 
-		a.nav:hover,a.nav:active {
-			opacity:0.6;
-		}  
-
-		/*  ------------------------------------------------ LINKS ----------------------------------------------------- */
-		a.linkHome_blk{
-			opacity:1;
-			color: black;
-			font-family:"Gill Sans";
-			font-size:14px;
-			font-weight: 500;
-			text-decoration:none;
-			text-align:center;
-		} 
-		a.linkHome_blk:hover,a.linkHome_blk:active {
-			opacity:0.6;
-		}  
-
-		a.linkHome_wht{
-			opacity:1;
-			color: white;
-			font-family:"Gill Sans";
-			font-size:14px;
-			font-weight: 500;
-			text-decoration:none;
-			text-align:center;
-
-		} 
-		a.linkHome_wht:hover,a.linkHome_wht:active {
-			opacity:0.6;
-		}  
 	</style>
-	
 </head>
 
 <body>
-
-	<!--  *********************************************************** NAVIGATION  *********************************************************** -->
-
 	<div id="skrollr-body">	
-		
-	
-		<div id="home_name1" 
-				data-0="opacity:1;top:220px; left:240px;" 
-				data-100="opacity:1;top:210px; left:240px;" 
-				data-300="opacity:1;top:200px; left:240px;" 
-				data-500="opacity:1;top:210px; left:240px;" 
-				data-1500="display:block;" 
-				data-2500="opacity:0;top:250px; left:240px;">
-			<img src="images/home_img_00_name1.png"/>
+		<div id="homeBkgd2"				
+				data-0="opacity:0;top:0px;left:0px;" 
+				data-13000="display:block;" 
+				data-13500="opacity:1;">
 		</div>
-
-		<div id="home_name2" 
-				data-0="opacity:1;top:200px; left:240px;" 
-				data-100="opacity:1;top:210px; left:240px;" 
-				data-300="opacity:1;top:220px; left:240px;" 
-				data-500="opacity:1;top:210px; left:240px;" 
+		
+		<div id="homeBkgd"				
+				data-0="opacity:0;top:0px;left:0px;" 
+				data-13000="display:block;" 
+				data-13500="opacity:0.85;">
+		</div>
+		
+		<div id="compost" 
+				data-700="opacity:0;top:250px;left:650px;" 
+				data-1000="opacity:1;top:300px;;" 
 				data-1500="display:block;" 
-				data-2500="opacity:0;top:180px; left:240px;">
-			<img src="images/home_img_00_name2.png"/>
+				data-2000="opacity:0;top:350px;">
+			<p class="header">I <img align="top" src="images/home_img_heart.png"/> TO COLLECT COMPOST.</p>
+		</div>
+		
+		<div id="dance" 
+				data-2400="opacity:0;top:250px;left:240px;" 
+				data-2500="opacity:1;top:300px;" 
+				data-3000="display:block;" 
+				data-3500="opacity:0;top:350px;">
+			<p class="header">I <img align="top" src="images/home_img_heart.png"/> TO DANCE TO OLDIES.</p>
 		</div>	
 		
-		<div id="home_arrows"
-			data-10="opacity:1; left:490px;"
-			data-200="opacity:0; left:490px;">
-			<img id="home_img_arrows" src="images/home_img_arrows.png" width="28" height="55">
+		<div id="burgers" 
+				data-6400="opacity:0;top:325px;left:400px;" 
+				data-6500="opacity:1;top:375px;;" 
+				data-7270="display:block;" 
+				data-7300="opacity:0; top:425px;">
+			<p class="header">I <img align="top" src="images/home_img_heart.png"/> HAMBURGERS.</p>
 		</div>
 		
-		<div id="lineDivider"				
-				data-450="opacity:0;top:320px;left:-200px;" 
-				data-650="opacity:0.5;top:320px;left:395px;" 
+
+		<div id="wholeBody" 	
+				data-0="top:-1690px; left:-360px;" 
 				data-1500="display:block;" 
-				data-2500="opacity:0;top:320px;left:1400px;">
-				</div>
+				
+				data-2500="top:-1100px; left: 00px;" 
+				data-3500="display:block;" 
+				
+				data-4500="top:-730px; left: -400px;"  
+				data-5500="display:block;" 
+				
+				data-6500="top:-480px; left: -100px;" 
+				data-7500="display:block;" 
+				
+				data-8500="top:-130px; left: -498px;" 
+				data-9500="display:block;" 
+				
+				data-10500="top:-40px; left: -250px;" 
+				data-13500="display:block;" >
+			<img src="images/home_img_wholeBody.png"/>
+		</div>
+
+
+			<div id="home_name1" 
+				data-0="top:304px; left:700px; opacity:1;" 
+				data-150="top:304px; left:700px;" 
+				data-550="display:block;" 
+				data-700="top:900px; opacity:0;">
+			<img src="images/home_img_name_01.png"/>
+		</div>
+	
+		<div id="home_name2" 
+				data-0="top:304px; left:700px; opacity:1;" 
+				data-150="top:304px; left:700px;" 
+				data-550="display:block;" 
+				data-700="top:925px; opacity:0;">
+			<img src="images/home_img_name_02.png"/>
+		</div>	
 		
-		<div id="introduction" 
-				data-450="opacity:0;top:325px;left:275px;" 
-				data-650="opacity:1;top:350px;left:275px;" 
-				data-1500="display:block;" 
-				data-2500="opacity:0;top:375px;left:275px;">
-			<p id="large">Hello! I am an interactive designer and <br> aspiring front-end developer based in NYC.
-			</p>
-			<p>This site features a selection of my design work as well as <br>
-			some  front end development I’ve been playing around with. </p>
+		<div id="homeDivider"				
+				data-0="opacity:0.5;top:390px;left:855px;" 
+				data-150="opacity:0.5;top:390px;left:855px;" 
+				data-550="display:block;" 
+				data-700="opacity:0;top:1000px;">
+		</div>
+		
+		<div id="intro1" 
+				data-0="top:400px; left: 795px; opacity:1;" 
+				data-100="opacity:0;">			
+			<p class="header">I am an INTERACTIVE DESIGNER<br>and aspiring FRONT-END DEVELOPER</p>
+		</div>
+		
+		<div id="intro2" 
+				data-100="top:400px; left: 765px; opacity:0;"
+				data-150="opacity:1;" 
+				data-550="display:block;" 
+				data-700="top:1000px; opacity:0;">			
+			<p class="header">but why tell you about myself <br>
+			when I can show you from the ground up? <br><br> SCROLL to see more <img align="top" src="images/home_img_heart.png"/></p>
+		</div>
+
+		<div id="shovel" 
+				data-700="top:-800px; left: 888px;" 
+				data-1000="top:30px;" 
+				data-1300="display:block;" 
+				data-2000="top:1000px; left:900px;" >
+			<img src="images/home_img_shovel.png"/>
+		</div>
+		
+		
+		<div id="dance01" 
+				data-1700="opacity:0;top:500px;left:100px;" 
+				data-1800="opacity:1;" 
+				data-1900="display:block;" 
+				data-2000="opacity:0;">
+			<img src="images/home_img_dance_01.png"/>
+		</div>	
+		
+		<div id="dance02" 
+				data-1800="opacity:0;top:500px;left:100px;" 
+				data-1900="opacity:1;" 
+				data-2000="display:block;" 
+				data-2100="opacity:0;">
+			<img src="images/home_img_dance_02.png"/>
+		</div>	
+		
+		<div id="dance03" 
+				data-1900="opacity:0;top:500px;left:100px;" 
+				data-2000="opacity:1;" 
+				data-2200="display:block;" 
+				data-2300="opacity:0;">
+			<img src="images/home_img_dance_03.png"/>
+		</div>	
+		
+		<div id="dance04" 
+				data-2200="opacity:0;top:500px;left:100px;" 
+				data-2300="opacity:1;" 
+				data-2400="display:block;" 
+				data-2500="opacity:0;">
+			<img src="images/home_img_dance_04.png"/>
+		</div>	
+				
+		<div id="dance05" 
+				data-2300="opacity:0;top:500px;left:100px;" 
+				data-2400="opacity:1;" 
+				data-2500="display:block;" 
+				data-2600="opacity:0;">
+			<img src="images/home_img_dance_05.png"/>
+		</div>	
+				
+		<div id="dance06" 
+				data-2400="opacity:0;top:470px;left:198px;" 
+				data-2500="opacity:1;" 
+				data-2600="display:block;" 
+				data-2700="opacity:0;">
+			<img src="images/home_img_dance_01.png"/>
+		</div>	
+		
+		<div id="dance07" 
+				data-2500="opacity:0;top:470px;left:198px;" 
+				data-2600="opacity:1;" 
+				data-2700="display:block;" 
+				data-2800="opacity:0;">
+			<img src="images/home_img_dance_02.png"/>
+		</div>	
+		
+		<div id="dance08" 
+				data-2600="opacity:0;top:470px;left:198px;" 
+				data-2700="opacity:1;" 
+				data-2800="display:block;" 
+				data-2900="opacity:0;">
+			<img src="images/home_img_dance_03.png"/>
+		</div>	
+		
+		<div id="dance09" 
+				data-2700="opacity:0;top:470px;left:198px;" 
+				data-2800="opacity:1;" 
+				data-2900="display:block;" 
+				data-3000="opacity:0;">
+			<img src="images/home_img_dance_04.png"/>
+		</div>
+		
+		<div id="dance10" 
+				data-2800="opacity:0;top:470px;left:198px;" 
+				data-2900="opacity:1;" 
+				data-3000="display:block;" 
+				data-3100="opacity:0;">
+			<img src="images/home_img_dance_05.png"/>
+		</div>	
+		
+		<div id="dance11" 
+				data-2900="opacity:0;top:440px;left:295px;" 
+				data-3000="opacity:1;" 
+				data-3100="display:block;" 
+				data-3200="opacity:0;">
+			<img src="images/home_img_dance_01.png"/>
+		</div>
+		
+		<div id="dance12" 
+				data-3000="opacity:0;top:440px;left:295px;" 
+				data-3100="opacity:1;" 
+				data-3200="display:block;" 
+				data-3300="opacity:0;">
+			<img src="images/home_img_dance_02.png"/>
+		</div>	
+
+		<div id="handkerchief_frame02" 
+				data-4650="opacity:0; top:278px;left:642px;"
+				data-4651="opacity:1;" 
+				data-4849="display:block;" 
+				data-4850="opacity:0;">
+			<img src="images/home_img_handkerchief_07.png"/>
+		</div>	
+		
+		<div id="handkerchief_frame03" 
+				data-4750="opacity:0;top:278px;left:642px;" 
+				data-4751="opacity:1;" 
+				data-4949="display:block;" 
+				data-4950="opacity:0;">
+			<img src="images/home_img_handkerchief_06.png"/>
+		</div>	
+		
+		<div id="handkerchief_frame04" 
+				data-4850="opacity:0;top:278px;left:642px;" 
+				data-4851="opacity:1;"
+				data-4949="display:block;" 
+				data-5050="opacity:0;">
+			<img src="images/home_img_handkerchief_05.png"/>
+		</div>	
+		
+		<div id="handkerchief_frame05" 
+				data-4950="opacity:0;top:278px;left:642px;" 
+				data-4951="opacity:1;" 
+				data-5149="display:block;" 
+				data-5150="opacity:0;">
+			<img src="images/home_img_handkerchief_04.png"/>
+		</div>	
+		
+		<div id="handkerchief_frame06" 
+				data-5050="opacity:0;top:278px;left:642px;" 
+				data-5051="opacity:1;" 
+				data-5249="display:block;"
+				data-5250="opacity:0;">
+			<img src="images/home_img_handkerchief_03.png"/>
+		</div>	
+		
+		<div id="handkerchief_frame07" 
+				data-5150="opacity:0;top:278px;left:642px;" 
+				data-5151="opacity:1;" 
+				data-5249="display:block;"
+				data-5350="opacity:0;">
+			<img src="images/home_img_handkerchief_02.png"/>
+		</div>	
+		
+		<div id="handkerchief_frame08" 
+				data-5250="opacity:0;top:278px;left:642px;" 
+				data-5251="opacity:1;" 
+				data-5449="display:block;"
+				data-5550="opacity:0;">
+			<img src="images/home_img_handkerchief_01.png"/>
+		</div>	
+		
+		<div id="handkerchief" 
+				data-4100="opacity:0;top:200px;left:870px;" 
+				data-4500="opacity:1;top:225px;" 
+				data-5000="display:block;" 
+				data-5500="opacity:0;top:250px;">
+			<p class="header">I <img align="top" src="images/home_img_heart.png"/> TO CARRY A HANDKERCHIEF.</p>
+		</div>	
+
+		<div id="stomach" 
+				data-6700="opacity: 0; top:250px; left: 720px;" 
+				data-6800="opacity: 1;" 
+				data-7150="display:block;" 
+				data-7300="opacity: 0;" >
+			<img src="images/home_img_stomach.png"/>
+		</div>
+		
+		<div id="dinner" 
+				data-6300="top:290px; left: -600px;" 
+				data-6500="left: 580px;" 
+				data-6700="display:block;" 
+				data-6900="left: 1500px;" >
+			<img src="images/home_img_dinner.png"/>
+		</div>
+		
+		<div id="burger" 
+				data-6300="opacity: 1; top:350px; left: -350px; transform: rotate(0deg)" 
+				data-6500="left: 825px;" 
+				data-7000="transform: rotate(10deg);"
+				data-7050="transform: rotate(-10deg);"
+				data-7100="transform: rotate(10deg);"
+				data-7150="transform: rotate(-10deg);"
+				data-7200="transform: rotate(0deg);"
+				data-7300="opacity:0;" >
+			<img src="images/home_img_burger.png"/>
+		</div>
+
+		<div id="sign" 
+				data-8650="opacity:0;top:78px;left:518px;" 
+				data-8680="opacity:1;" 
+				data-9330="display:block;" 
+				data-9350="opacity:0;">
+			<img src="images/home_img_sign.png"/>
+		</div>		
+		
+		<div id="sign understand" 
+				data-8600="opacity:0;top:158px;left:670px;" 
+				data-8800="opacity:1;" 
+				data-9300="display:block;" 
+				data-9400="opacity:0;">
+			<img src="images/home_img_sign_understand.png"/>
+		</div>
+		<div id="sign lang" 
+				data-8400="opacity:0;top:350px;left:795px;" 
+				data-8500="opacity:1;top:400px;" 
+				data-9300="display:block;" 
+				data-9350="opacity:0;top:450px;">
+			<p class="header">I <img align="top" src="images/home_img_heart.png"/> LEARNING SIGN LANGUAGE.</p>
+		</div>
+
+		<div id="design" 
+				data-10500="opacity:0;top:140px;left:350px;" 
+				data-11000="opacity:1;top:190px;;" 
+				data-12500="display:block;" 
+				data-13000="opacity:0;top:240px;">
+			<p class="header">I <img align="top" src="images/home_img_heart.png"/> DESIGN</p>
+		</div>
 			
-			<!--p>When I am not working,  I enjoy winning sneeze competitions,
-			learning <a class = generalLink href ="http://lifeprint.com/" target="_blank">sign language<a>, and collecting compost. </p-->
-		</div>
-
-		<div id="home_img_01" 
-			data-2000="opacity:1;top:-300px;left:-216px;" 
-			data-3500="opacity:1;top:46px;left:134px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:-20px;left:80px;" >
-			<img src="images/home_img_01.png"/>
-		</div>
-
-		<div id="home_img_02" 
-			data-2000="opacity:1;top:-500px;left:320px;" 
-			data-3500="opacity:1;top:27px;left:300px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:-40px;left:310px;" >
-			<img src="images/home_img_02.png"/>
-		</div>
-
-		<div id="home_img_03" 
-			data-2000="opacity:1;top:-290px;left:1200px;" 
-			data-3500="opacity:1;top:12px;left:600px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:10px;left:680px;" >
-			<img src="images/home_img_03.png"/>
-		</div>
-
-		<div id="home_img_04" 
-			data-2000="opacity:1;top:603px;left:-288px;" 
-			data-3500="opacity:1;top:270px;left:138px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:400px;left:70px;" >
-			<img src="images/home_img_04.png"/>
-		</div>
-
-		<div id="home_img_05" 
-			data-2500="opacity:1;top:65px;left:-504px" 
-			data-3500="opacity:1;top:266px;left:205px"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:210px;left:-30px;" >
-			<img src="images/home_img_05.png"/>
-		</div>
-
-		<div id="home_img_06" 
-			data-2500="opacity:1;top:132px;left:1450px;" 
-			data-3500="opacity:1;top:160px;left:480px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:140px;left:650px;" >
-			<img src="images/home_img_06.png"/>
-		</div>
-
-		<div id="home_img_07" 
-			data-2000="opacity:1;top:935px;left:85px;" 
-			data-3500="opacity:1;top:452px;left:228px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:480px;left:300px;" >
-			<img src="images/home_img_07.png"/>
-		</div>
-
-		<div id="home_img_08" 
-			data-2000="opacity:1;top:930px;left:800px;" 
-			data-3500="opacity:1;top:455px;left:480px;"
-			data-4500="display:block;" 
-			data-6000="opacity:1;top:480px;left:600px;" >
-			<img src="images/home_img_08.png"/>
+		<div id="right brain" 
+				data-10500="opacity: 0; top:130px; left: 572px;" 
+				data-11000="opacity: 1; top:130px;" 
+				data-12500="display:block;" 
+				data-13000="opacity: 0; " >
+			<img src="images/home_img_brainRight.png"/>
 		</div>
 		
-		<div id="endNav" 
-				data-5500="opacity:0;top:350px;left:380px;" 
-				data-6000="opacity:1;top:350px;left:380px;" 
-			<ul>
-				<li><a class = nav href ="maybe.html">WORK</a></li>
-				<img id="navDivider" src="images/divider.png"/>
-				<li><a class = nav href ="index.html"><img id="navLogo" src="images/nav_logo.png" height="38" width="32"></a></li>
-				<img id="navDivider" src="images/divider.png"/>
-				<li><a class = nav href ="play.html">PLAY</a></li>			
-			</ul>
+		<div id="dev" 
+				data-11500="opacity:0;top:140px;left:900px;" 
+				data-12000="opacity:1;top:190px;" 
+				data-12500="display:block;" 
+				data-13000="opacity:0;top:240px;">
+			<p class="header">AND DEVELOPMENT.</p>
 		</div>
 		
-		<div id="home_link_01" 
-			data-5900="opacity:0;top:40px;left:300px;" 
-			data-6500="opacity:1;top:50px;left:300px;">
-			<p><a class = linkHome_wht href ="maybe.html"> MAYBE </a></p>
-		</div>
-		<div id="home_link_02" 
-			data-5900="opacity:0;top:52px;left:545px;" 
-			data-6500="opacity:1;top:62px;left:545px;">
-			<p><a class = linkHome_blk href ="curiousgeorge.html">CURIOUS<br> GEORGE  </a></p>
-		</div>
-		<div id="home_link_03" 
-			data-5900="opacity:0;top:140px;left:755px;" 
-			data-6500="opacity:1;top:150px;left:755px;">
-			<p><a class = linkHome_wht href ="tryuntil.html"> TRY UNTIL </a>
-		</div>
-		<div id="home_link_04" 
-			data-5900="opacity:0;top:610px;left:155px;" 
-			data-6500="opacity:1;top:620px;left:155px;">
-			<p><a class = linkHome_wht href ="celebratehair.html">  CELEBRATE <br>HAIR</a></p>
-		</div>
-		<div id="home_link_05" 
-			data-5900="opacity:0;top:242px;left:125px;" 
-			data-6500="opacity:1;top:252px;left:125px;">
-			<p><a class = linkHome_blk href ="dcsf.html">  DC SUPER <br> FRIENDS</a></p>
-		</div>
-		<div id="home_link_06" 
-			data-5900="opacity:0;top:230px;left:902px;" 
-			data-6500="opacity:1;top:240px;left:902px;">
-			<p><a class = linkHome_wht href ="places.html"> PLACES <br> I'VE LIVED </a></p>
-		</div>
-		<div id="home_link_07" 
-			data-5900="opacity:0;top:600px;left:528px;" 
-			data-6500="opacity:1;top:610px;left:528px;">
-			<p><a class = linkHome_blk href ="abcsofbeijing.html"> ABCS OF <br> BEIJING </a></p>
-		</div>
-		<div id="home_link_08" 
-			data-5900="opacity:0;top:540px;left:680px;" 
-			data-6500="opacity:1;top:550px;left:680px;">
-			<p><a class = linkHome_blk href ="tomandjerry.html"> TOM & JERRY </a></p>
+		<div id="left brain" 
+				data-11500="opacity: 0; top:130px; left: 572px;" 
+				data-12000="opacity: 1; top:130px;" 
+				data-12500="display:block;" 
+				data-13000="opacity: 0; " >
+			<img src="images/home_img_brainLeft.png"/>
 		</div>
 		
+		<div id="speech bubble" 
+				data-13500="opacity: 0; top:180px; left: 220px;" 
+				data-14000="opacity: 1; top:180px;">
+			<img src="images/home_img_speechBubble.png"/>
+		</div>
 		
-
+		<div id="speech bubble" 
+				data-13500="opacity: 0; top:204px; left: 270px;" 
+				data-14000="opacity: 1; top:204px;">
+			<p class="header">Check out my <a id="home" href ="work.html">work</a>!</p>
+		</div>
+		
 	</div> <!--skrollr-body-->
 	<script type="text/javascript" src="js/skrollr.min.js"></script>
-
-	<!--[if lt IE 9]>
-	<script type="text/javascript" src="dist/skrollr.ie.min.js"></script>
-	<![endif]-->
 
 	<script type="text/javascript">
 	var s = skrollr.init({

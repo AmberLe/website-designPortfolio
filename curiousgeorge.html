@@ -7,7 +7,7 @@
 		<link rel="shortcut icon" type="image/png" href="images/favIcon.png" />
 	
 		<!-- external css file -->
-		<link rel="stylesheet" type="text/css" href="index_styles.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
 		
 		<!-- include jQuery library -->
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
@@ -18,7 +18,7 @@
 			$(document).ready(function() {
 				$('.slideshow').cycle({
 					fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-					speed: 500, // choose speed, 300 - 2000, slow, fast
+					speed: 300, // choose speed, 300 - 2000, slow, fast
 					next:'.slideshow'
 				});
 			});
@@ -30,44 +30,46 @@
 						<!--  *********************************************************** NAVIGATION  *********************************************************** -->
 	<div id="navBar"> 
 			<ul>
-				<li><a class = nav href ="maybe.html">WORK</a></li>
-				<img id="divider" src="images/divider.png"/>
+				<li><a class = nav href ="work.html">WORK</a></li>
+				<img id="divider" src="images/nav_divider.png"/>
 				<li><a class = nav href ="index.html"><img id="navLogo" src="images/nav_logo.png" height="38" width="32"></a></li>
-				<img id="divider" src="images/divider.png"/>
+				<img id="divider" src="images/nav_divider.png"/>
 				<li><a class = nav href ="play.html">PLAY</a></li>			
 			</ul>
 	</div>
 					
 					<!--  *********************************************************** PROJECTS  ********************************************************** -->
-	<div id="wrapper">
+	<div id="projectContainer">
 	<table>		
 		<tr>
 			<td rowspan="2" class = "projectImage">	
 				<div class="slideshow">				
 					<img src="images/proj_cg_1.png"/>
 					<img src="images/proj_cg_2.png"/>
+					<img src="images/proj_cg_12.png"/>
+					<img src="images/proj_cg_13.png"/>
+					<img src="images/proj_cg_14.png"/>
 					<img src="images/proj_cg_3.png"/>
-					<img src="images/proj_cg_6.png"/>
-					<img src="images/proj_cg_7.png"/>
-					<img src="images/proj_cg_8.png"/>
+					<img src="images/proj_cg_11.png"/>
 					<img src="images/proj_cg_4.png"/>
+					<img src="images/proj_cg_6.png"/>
 					<img src="images/proj_cg_5.png"/>
 				</div>
 			</td>
-			<td class = "projectText" height="430px" colspan="3">	
-				<p class="title"> CURIOUS GEORGE'S DICTIONARY APP  </p>
-				<p>Designed interface for interactive dictionary app, which includes over 600 words and pictures as well as short stories.
+			<td class = "projectText" height="420px" colspan="3">	
+				<p class="projectTitle"> CURIOUS GEORGE'S DICTIONARY</p>
+				<p class="projectDescription">Designed interface for interactive dictionary app, which includes over 600 words and pictures as well as short stories.
 			</td>
 		</tr>
 		
 		<tr>
 			<td class="projectNav" style="text-align:right">
-				<a class="projectNavBtn" href="maybe.html">PREVIOUS PROJECT</a></td>
-			<td class="projectNav" style="text-align:right"><img id="divider" src="images/divider.png"/></td>
+				<a class="projectNavLink" href="maybe.html">PREVIOUS PROJECT</a></td>
+			<td class="projectNav" style="text-align:right"><img id="divider" src="images/nav_divider.png"/></td>
 			<td class="projectNav">
-				<a class="projectNavBtn" href="tryuntil.html">NEXT PROJECT</a></td>
+				<a class="projectNavLink" href="tryuntil.html">NEXT PROJECT</a></td>
 		</tr>
-
+		
 		<tr><td colspan="4" class="divider"></td></tr>
 		<tr><td colspan="4" class="projectContact">	
 			<a class="contact" href ="mailto:hey@amburger.me" target="_blank"><img src="images/contact_mail.png" /></a>
