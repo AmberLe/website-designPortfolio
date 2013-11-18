@@ -1,0 +1,198 @@
+/* RESET CSS: http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 Public domain */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+body{
+    background:#fff;
+    margin:0px;
+    padding:0px;
+}
+
+p {
+    margin:50px 30px;
+    font-family:Helvetica;
+    font-size:20px; 
+    font-weight: 600;
+    text-align:center;
+    line-height: 140%;
+}
+
+
+#tangram{
+    background:#eef2f5;
+    position:relative;
+    margin:10% auto;
+    width:60%;
+    height:500px;
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -0-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    transition:0.5s ease;
+    border-radius: 15px;
+}
+#tangram:hover {
+    background:#dfe0e0; 
+}
+
+#body{
+    position:relative;
+    margin:auto;
+    top: 250px;
+    left: 15px;
+    width: 0px; 
+    height: 0px; 
+    border-bottom: 150px solid #19b9c3;
+    border-right: 150px solid transparent;
+    content:"";
+    -webkit-animation:triangle_body_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_body_complete{
+0%{top:250px; left: 15px; -webkit-transform:rotate(0deg)}
+50%{top:250px; left: 5px; -webkit-transform:rotate(135deg)}
+
+}
+
+#triangle_tail{
+    position:absolute;
+    top: 0px;
+    left: -1px;
+    width: 0;
+    height: 0;
+    border-left: 105px solid transparent;
+    border-right: 105px solid transparent;
+    border-top: 105px solid #6dc7e0;
+    z-index:2;
+    -webkit-animation:triangle_tail_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_tail_complete{
+0%{top:0px; left: -1px; -webkit-transform:rotate(0deg)}
+50%{top:134px; left: -70px; -webkit-transform:rotate(135deg)}
+}
+
+#triangle_base{
+    position:absolute;
+    top: 0px;
+    left: -75px;
+    width: 0px; 
+    height: 0px; 
+    border-top: 75px solid transparent;
+    border-right: 75px solid #317da9;
+    border-bottom: 75px solid transparent;
+    -webkit-animation:triangle_base_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_base_complete{
+0%{left: -75px; top: 0px; -webkit-transform:rotate(0deg)}
+50%{left:-145px; top: 75px; -webkit-transform:rotate(0deg)}
+}
+
+#triangle_chest{
+    position:absolute;
+    top: -25px;
+    left: -75px;
+    width: 0px; 
+    height: 0px; 
+    border-top: 50px solid transparent;
+    border-left: 50px solid #069090;
+    border-bottom: 50px solid transparent;
+    -webkit-animation:triangle_chest_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_chest_complete{
+0%{left: -75px; top: -25px; -webkit-transform:rotate(0deg)}
+50%{left: -45px; top: 188px; -webkit-transform:rotate(-45deg)}
+}
+#square{
+    position:absolute;
+    top: -60px;
+    left: -60px; 
+    transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg); /* IE 9 */
+    -webkit-transform:rotate(-45deg); /* Safari and Chrome */   
+    width: 0px; 
+    height: 0px; 
+    border-left: 35px solid #19b9c3;
+    border-right: 35px solid #19b9c3;
+    border-top: 35px solid #19b9c3;
+    border-bottom: 35px solid #19b9c3;
+    -webkit-animation:triangle_square_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_square_complete{
+0%{left: -60px; top: -60px; -webkit-transform:rotate(-45deg)}
+50%{left: -72px; top: 150px; -webkit-transform:rotate(0deg)}
+}
+
+#triangle_neck{
+    position:absolute;
+    top: -126px;
+    left: -26px;
+    width: 0px; 
+    height: 0px; 
+    border-top: 51px solid transparent;
+    border-right: 51px solid #069090;
+    border-bottom: 51px solid transparent;
+    -webkit-animation:triangle_neck_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_neck_complete{
+0%{left: -26px; top: -126px; -webkit-transform:rotate(0deg)}
+50%{left: -79px; top: 46px; -webkit-transform:rotate(45deg)}
+}
+
+#triangle_head{
+    position:absolute;
+    top: -177px;
+    left: -26px;
+    width: 0px; 
+    height: 0px; 
+    border-top: 51px solid transparent;
+    border-left: 51px solid #069090;
+    border-bottom: 51px solid transparent;
+    -webkit-animation:triangle_head_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_head_complete{
+0%{left: -26px; top: -177px; -webkit-transform:rotate(0deg)}
+50%{left: -42px; top: 10px; -webkit-transform:rotate(45deg)}
+}
+
+#triangle_face{
+    position:absolute;
+    top: -177px;
+    left: -95px;
+    width: 0px; 
+    height: 0px; 
+    border-top: 69px solid transparent;
+    border-right: 69px solid #317da9;
+    -webkit-animation:triangle_face_complete 5s infinite;
+} 
+
+@-webkit-keyframes triangle_face_complete{
+0%{left: -95px; top: -177px; -webkit-transform:rotate(0deg)}
+50%{left: -69px; top: 80px; -webkit-transform:rotate(0deg)}
+}
+
+
+
+
+
+

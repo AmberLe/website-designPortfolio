@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>paginated slides</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+  <script src="js/slides.min.jquery.js"></script>	
+</head>
+
+<body>
+	<div id="container">
+		<div id="slides">
+			<div class="slides_container">
+				<img src="images/image_01.png" alt="slide1"/>
+				<img src="images/image_02.png" alt="slide3"/>
+				<img src="images/image_03.png" alt="slide5"/>
+			</div><!-- end slides container -->
+		</div><!-- end slides -->
+
+	</div><!-- end container wrap -->
+
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				generateNextPrev: true,	
+			});
+		});
+</script>
+
+</body>
+</html>

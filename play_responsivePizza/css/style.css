@@ -1,0 +1,163 @@
+/* 
+html5doctor.com Reset Stylesheet v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1.25;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+/* --------------------------------------------
+   My Styles
+-------------------------------------------- */
+
+body { background: #00000; font-family: sans-serif; color: #383838; text-align: left; }
+	a { color: #9f443b; text-decoration: none; }
+	a:hover { text-decoration: underline; }
+	
+	nav {text-align: center; margin: 30px 0px;}		
+		nav li {display: inline; list-style: none; border-right: 0px solid black; font-size: 16px; text-transform: uppercase; }
+		nav li:last-child {border: 0; }
+		nav a {
+			background: #c1b7a7; 
+			padding: 12px 50px; 
+			color: #fff; 
+			text-decoration: none;
+			-webkit-transition-property: background; 
+			-webkit-transition-duration: .5s; 
+			-webkit-transition-timing-function: linear;  
+			}
+		a:hover { background: #9f443b; }
+	nav.tabletSize {display: none}
+	
+		#banner {padding: 2% 15%; font-size: 18px; border-top: 1px solid #383838; border-bottom: 1px solid #383838; clear: both; margin: 30px 0px; text-align: center;}
+		
+		#content {margin: 0 auto; width: 70%; padding: 0% 15%;}
+			#content article { background: #fff; margin: 0 0 30px 0; padding: 25px; -webkit-border-radius: 16px; -webkit-box-shadow: 0 0 4px rgba(0,0,0,.3); }					
+				#content article h3 { font-size: 24px; margin-bottom: 4px; padding: 5px 0px 20px 0px;}
+				#content article img { float: left; margin: 0px 25px 20px 0px; }
+				#content article p { font-size: 16px; margin-bottom: 16px; }
+		
+/* --------------------------------------------
+  Mobile tablet
+-------------------------------------------- */
+@media (max-width: 850px) {
+	
+	nav a {
+			background: #c1b7a7; 
+			padding: 12px 25px; }
+	#content { float: none; width: inherit; margin: 0% 2%; padding: 0% 12%; line-height:1.5;}
+		#content article { padding: 10px; -webkit-border-radius: 16px; padding: 4%; }
+			#content article h3 {font-size: 22px; margin-bottom: 0px; line-height:1.3;}
+			#content article img {float: left; margin: 15px 0px; width: 100%;}
+		
+/* --------------------------------------------
+  Mobile phone
+-------------------------------------------- */
+@media (max-width: 500px) {
+
+	#container { float: none; width: inherit; }
+	
+	nav {text-align: left; margin: 0px auto; float: none; width: inherit; border; }		
+		nav li a {float: none; display: block; width: 100%; border-bottom: 4px solid white; }
+
+	#banner{padding: 5%; line-height:1.3;}
+	
+	#content { float: none; width: inherit; margin: 2%; padding: 4%; line-height:1.5;}
+		#content article { padding: 10px; -webkit-border-radius: 0; padding: 4%; }
+		#content article h3 { font-size: 20px; margin-bottom: 0px; line-height:1.3;}
+		#content article img {float: left; margin: 15px 0px; width: 100%;}
+}

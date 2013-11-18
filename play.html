@@ -5,28 +5,11 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>play</title>
 		<link rel="shortcut icon" type="image/png" href="images/favIcon.png" />
-	
-		<!-- external css file -->
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		
-		<!-- include jQuery library -->
-		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-		
-		<!-- include Cycle plugin -->
-		<script type="text/javascript" src="js/jquery.cycle.lite.js"></script>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$('.slideshow').cycle({
-					fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-					speed: 500, // choose speed, 300 - 2000, slow, fast
-					next:'.slideshow'
-				});
-			});
-		</script>		
 	</head>
 
 	<body>
-						<!--  *********************************************************** NAVIGATION  *********************************************************** -->
+					<!--  *********************************************************** NAVIGATION  *********************************************************** -->
 	<div id="navBar"> 
 			<ul>
 				<li><a class = nav href ="work.html">WORK</a></li>
@@ -37,50 +20,92 @@
 			</ul>
 	</div>
 					
-					<!--  *********************************************************** PLAY  ********************************************************** -->
+					<!--  ************************************************************** PLAY  ****************************************************************** -->
 
-	<table id="play">		
-			<tr>
-				<td height="170px" colspan="3">
-					<p id="large">IN PROGRESS (too busy playing)</p>
-					<p class="center">This section contains a hodgepodge of coding exercises and <br>unfinished mini projects. There isn't much right now, but please check <br>back again soon for updates</p>
-				</td>
-			</tr>
+	<div id="playIntroduction">
+			<h2 class="center">IN PROGRESS (too busy playing)</h2>
+			<p class="center">This section contains a hodgepodge of coding exercises and unfinished mini projects. Please check back again soon for updates.</p>
+	</div>				
+
+	<table id="large">		
+		<tr>
+			<td class = "thumbnail" id="red"><h3 class="center"><a class = nav href ="play_squishyBlobs/squishyBlobs.html" target="_blank">SQUISHY BLOGS</a></h3><br><p class="center">An interactive navigation idea. <br>.</p></td>
+			<td class = "thumbnail" id="orange">	<h3 class="center"><a class = nav href ="play_tangrams/tangrams.html" target="_blank">TANGRAMS</a></h3><br><p class="center">Never too old <br>to still enjoy tangrams!</p></td>
+			<td class = "thumbnail" id="teal"><h3 class="center"><a class = nav href ="play_spaceInvaders/spaceInvaders.html" target="_blank">SPACE INVADERS</a></h3><br><p class="center">More fun animations and <br>shape exploration.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="yellow"><h3 class="center"><a class = nav href ="play_hoveringEffects/hoveringEffects.html" target="_blank">HOVERING</a></h3><br><p class="center">Cool effects with <br>our buddy, CSS3.</p></td>
+			<td class = "thumbnail" id="blue">	<h3 class="center"><a class = nav href ="play_responsivePizza/responsivePizza.html" target="_blank">RESPONSIVE PIZZA</a></h3><br><p class="center">Make the window narrower<br>and see what happens.</p></td>
+			<td class = "thumbnail" id="orange"><h3 class="center"><a class = nav href ="play_paginatedSlides/paginatedSlides.html" target="_blank">PAGINATED SLIDES</a></h3><br><p class="center">Image slideshow with<br>pagination dots.</p></td>
+		</tr>	
+		<tr>
+			<td class = "thumbnail" id="teal"><h3 class="center"><a class = nav href = "play_paperCurtains/paperCurtains.html" target="_blank">PAPER CURTAINS</a></h3><br><p class="center">Subtle rotation <br>with CSS animations.</p></td>
+			<td class = "thumbnail" id="red"><h3 class="center"><a class = nav href ="play_navigation/navigation.html" target="_blank">NAVIGATION</a></h3><br><p class="center">Yet another website iteration with <br>sliding nav and sticky footer.</p></td>
+			<td class = "thumbnail" id="yellow"><a class = nav href ="play_showerBeer/showerBeer.html" target="_blank">SHOWER BEER</a></h3><br><p class="center">Parallax using JavaScript <br>(a botched version based on <br>this <a  class="insideText" href="http://janploch.de/" target="_blank">beautiful site</a>).</p></td>
+		</tr>			
+	</table>	
+
+	<table id="medium">		
+		<tr>
+			<td class = "thumbnail" id="red"><h3 class="center"><a class = nav href ="play_squishyBlobs/squishyBlobs.html" target="_blank">SQUISHY BLOGS</a></h3><br><p class="center">An interactive navigation idea. <br>.</p></td>
+			<td class = "thumbnail" id="orange">	<h3 class="center"><a class = nav href ="play_tangrams/tangrams.html" target="_blank">TANGRAMS</a></h3><br><p class="center">Never too old <br>to still enjoy tangrams!</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="teal"><h3 class="center"><a class = nav href ="play_spaceInvaders/spaceInvaders.html" target="_blank">SPACE INVADERS</a></h3><br><p class="center">More fun animations and <br>shape exploration.</p></td>
+			<td class = "thumbnail" id="blue"><h3 class="center"><a class = nav href ="play_hoveringEffects/hoveringEffects.html" target="_blank">HOVERING</a></h3><br><p class="center">Cool effects with <br>our buddy, CSS3.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="yellow">	<h3 class="center"><a class = nav href ="play_responsivePizza/responsivePizza.html" target="_blank">RESPONSIVE PIZZA</a></h3><br><p class="center">Make the window narrower<br>and see what happens.</p></td>
+			<td class = "thumbnail" id="orange"><h3 class="center"><a class = nav href ="play_paginatedSlides/paginatedSlides.html" target="_blank">PAGINATED SLIDES</a></h3><br><p class="center">Image slideshow with<br>pagination dots.</p></td>
+		</tr>	
+		<tr>
+			<td class = "thumbnail" id="teal"><h3 class="center"><a class = nav href = "play_paperCurtains/paperCurtains.html" target="_blank">PAPER CURTAINS</a></h3><br><p class="center">Subtle rotation <br>with CSS animations.</p></td>
+			<td class = "thumbnail" id="red"><h3 class="center"><a class = nav href ="play_navigation/navigation.html" target="_blank">NAVIGATION</a></h3><br><p class="center">Yet another website iteration with <br>sliding nav and sticky footer.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="yellow"><a class = nav href ="play_showerBeer/showerBeer.html" target="_blank">SHOWER BEER</a></h3><br><p class="center">Parallax using JavaScript <br>(a botched version based on <br>this <a  class="insideText" href="http://janploch.de/" target="_blank">beautiful site</a>).</p></td>
+		</tr>			
+	</table>
 	
+	<table id="small">		
 		<tr>
-			<td class = "thumbnail" id="yellow">	
-				<div><p class="center"><a class = nav href ="play_figureCaptions/figureCaptions.html" target="_blank">FIGURE CAPTIONS</a><br><br>one of many website iterations <br>with hovering captions</p></div>
-			</td>
-			<td class = "thumbnail" id="teal">	
-				<div><p class="center"><a class = nav href ="play_paperCurtains/paperCurtains.html" target="_blank">PAPER CURTAINS</a><br><br>subtle rotation <br>with CSS animations</p></div>
-			</td>
-			<td class = "thumbnail" id="orange">	
-				<div><p class="center"><a class = nav href ="play_showerBeer/showerBeer.html" target="_blank">SHOWER BEER</a><br><br>parallax using JavaScript <br>(still buggy)</a></p></div>
-			</td>
+			<td class = "thumbnail" id="red"><h3 class="center"><a class = nav href ="play_squishyBlobs/squishyBlobs.html" target="_blank">SQUISHY BLOGS</a></h3><br><p class="center">An interactive navigation idea. <br>.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="orange">	<h3 class="center"><a class = nav href ="play_tangrams/tangrams.html" target="_blank">TANGRAMS</a></h3><br><p class="center">Never too old <br>to still enjoy tangrams!</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="teal"><h3 class="center"><a class = nav href ="play_spaceInvaders/spaceInvaders.html" target="_blank">SPACE INVADERS</a></h3><br><p class="center">More fun animations and <br>shape exploration.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="yellow"><h3 class="center"><a class = nav href ="play_hoveringEffects/hoveringEffects.html" target="_blank">HOVERING</a></h3><br><p class="center">Cool effects with <br>our buddy, CSS3.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="blue">	<h3 class="center"><a class = nav href ="play_responsivePizza/responsivePizza.html" target="_blank">RESPONSIVE PIZZA</a></h3><br><p class="center">Make the window narrower<br>and see what happens.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="orange"><h3 class="center"><a class = nav href ="play_paginatedSlides/paginatedSlides.html" target="_blank">PAGINATED SLIDES</a></h3><br><p class="center">Image slideshow with<br>pagination dots.</p></td>
 		</tr>	
 		<tr>
-			<td class = "thumbnail" id="orange">	
-				<div><p class="center"><a class = nav href ="play_navigation/navigation.html" target="_blank">NAVIGATION</a><br><br>yet another website iteration with <br>sliding nav and sticky footer</p></div>
-			</td>
-			<td class = "thumbnail" id="yellow" >	
-				<div><p class="center">MORE TO COME</p></div>
-			</td>
-			<td class = "thumbnail" id="teal">	
-				<div><p class="center">:D</p></div>
-			</td>
-		</tr>	
-	<table>
-		<tr><td colspan="3" class="divider"></td></tr>
-		<tr><td colspan="3" class="projectContact">	
+			<td class = "thumbnail" id="teal"><h3 class="center"><a class = nav href = "play_paperCurtains/paperCurtains.html" target="_blank">PAPER CURTAINS</a></h3><br><p class="center">Subtle rotation <br>with CSS animations.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="red"><h3 class="center"><a class = nav href ="play_navigation/navigation.html" target="_blank">NAVIGATION</a></h3><br><p class="center">Yet another website iteration with <br>sliding nav and sticky footer.</p></td>
+		</tr>		
+		<tr>
+			<td class = "thumbnail" id="yellow"><a class = nav href ="play_showerBeer/showerBeer.html" target="_blank">SHOWER BEER</a></h3><br><p class="center">Parallax using JavaScript <br>(a botched version based on <br>this <a  class="insideText" href="http://janploch.de/" target="_blank">beautiful site</a>).</p></td>
+		</tr>			
+	</table>
+	
+
+	<div class="contactFooter">
 			<a class="contact" href ="mailto:hey@amburger.me" target="_blank"><img src="images/contact_mail.png" /></a>
 			<a class="contact" href="http://www.linkedin.com/pub/amber-le/1b/4a9/34" target="_blank"><img src="images/contact_linkedin.png"/></a>
 			<a class="contact" href="https://github.com/Amburger816" target="_blank"><img src="images/contact_github.png"/></a>
 			<a class="contact" href="http://www.amburger816.tumblr.com" target="_blank"><img src="images/contact_tumblr.png"/></a>
 			<a class="contact" href="https://twitter.com/amburger816/" target="_blank"><img src="images/contact_twitter.png"/></a>
-		</td></tr>
-		
-	</table>
 	</div>
+	
 	
 	</body>
 </html>

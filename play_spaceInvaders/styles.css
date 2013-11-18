@@ -1,0 +1,342 @@
+/* RESET CSS: http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 Public domain */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse; border-spacing: 0;}
+
+body{
+	background:#fff;
+	margin:0px;
+	padding:0px;
+}
+
+p {
+	margin:50px 30px;
+	font-family:Helvetica;
+	font-size:20px;
+	font-weight: 600;
+	text-align:center;
+	line-height: 140%;
+}
+
+p.small {
+	margin:150px 30px;
+	font-family:Helvetica;
+	font-size:16px;
+	font-weight: 400;
+	text-align:center;
+	line-height: 140%;
+}
+
+.square{
+	width:60%;
+	height:350px;
+	cursor:pointer;
+}
+
+#spaceInvader{
+	background:black;
+	position:relative;
+	margin:10% auto;
+	-webkit-transition:0.5s ease;
+	-moz-transition:0.5s ease;
+	-0-transition:0.5s ease;
+	-ms-transition:0.5s ease;
+	transition:0.5s ease;
+}
+
+#spaceInvader:hover {
+	background:#2b2b2b;
+	-webkit-transition:0.5s ease;
+	-moz-transition:0.5s ease;
+	-0-transition:0.5s ease;
+	-ms-transition:0.5s ease;
+	transition:0.5s ease;
+}
+
+#body{
+	position:relative;
+	margin:auto;
+	width:175px;
+	height:100px;
+	background:#00f500;
+	left: 0px;
+	top: 100px;
+	content:"";
+    -webkit-animation: body_S2 5s infinite;
+} 
+
+@-webkit-keyframes body_S2{
+0%{top:100px; left: 0px; -webkit-transform:rotateX(0deg)}
+50%{top:100px; left: 0px; -webkit-transform:rotateX(180deg)}
+}
+
+
+.pixel{
+	width:25px;
+	height:25px;
+	background:#00f500;
+}
+
+#eyeLeft{
+	position:absolute;
+	background:#000303;
+	left: 25px;
+	top: 25px;
+	z-index:2;
+    -webkit-animation: eye_S2 5s infinite;
+} 
+#eyeRight{
+	position:absolute;
+	background:#000303;
+	left: 125px;
+	top: 25px;
+	z-index:2;
+    -webkit-animation: eye_S2 5s infinite;
+}
+@-webkit-keyframes eye_S2{
+0%{top:25px; -webkit-transform:rotateY(0deg)}
+50%{top:50px; -webkit-transform:rotateY(0deg)}
+}
+
+#antennaLeft{
+	position:absolute;
+	left: 25px;
+	top: -25px;	
+	content:"";
+    -webkit-animation: antennaLeft_S2 5s infinite;
+} 
+
+@-webkit-keyframes antennaLeft_S2{
+0%{top:-25px; left: 25px; -webkit-transform:rotateY(0deg)}
+50%{top:-50px; left: 75px; -webkit-transform:rotateY(0deg)}
+}
+
+#antennaLeftTop{
+	position:absolute;
+	left: 0px;
+	top: -50px;	
+	content:"";
+    -webkit-animation:  5s infinite;
+} 
+
+@-webkit-keyframes antennaLeftTop_S2{
+0%{top:-50px; left: 0px; -webkit-transform:rotateY(0deg)}
+50%{top:-25px; left: 50px; -webkit-transform:rotateY(0deg)}
+}
+
+
+#antennaRight{
+	position:absolute;
+	left: 125px;
+	top: -25px;
+}
+#antennaRightTop{
+	position:absolute;
+	left: 150px;
+	top: -50px;	
+	content:"";
+}
+
+#armLeft{
+	position:absolute;
+	width:25px;
+	height:50px;
+	left: -25px;
+	top: 25px;
+	background: #00f500;
+    -webkit-animation: armLeft_S2 5s infinite;
+    z-index: 5;
+} 
+@-webkit-keyframes armLeft_S2{
+0%{top:25px; left: -25px; -webkit-transform:rotate(0deg)}
+50%{top:-86px; left: -12px; -webkit-transform:rotate(90deg)}
+}
+
+#handLeft{
+	position:absolute;
+	width:25px;
+	height:75px;
+	left: -50px;
+	top: 50px;
+	background: #00f500;
+    -webkit-animation: handLeft_S2 5s infinite;
+} 
+@-webkit-keyframes handLeft_S2{
+0%{top:50px; left: -50px; -webkit-transform:rotateY(0deg)}
+50%{top:0px; left: -24px; -webkit-transform:rotateY(0deg)}
+}
+
+#armRight{
+	position:absolute;
+	width:25px;
+	height:50px;
+	left: 175px;
+	top: 25px;
+	background: #00f500;
+    -webkit-animation: armRight_S2 5s infinite;
+    z-index: 5;
+} 
+@-webkit-keyframes armRight_S2{
+0%{top:25px; left: 175px; -webkit-transform:rotate(0deg)}
+50%{top:-86px; left: 163px; -webkit-transform:rotate(-90deg)}
+}
+
+
+#handRight{
+	position:absolute;
+	width:25px;
+	height:75px;
+	left: 200px;
+	top: 50px;
+	background: #00f500;
+    -webkit-animation: handRight_S2 5s infinite;
+} 
+@-webkit-keyframes handRight_S2{
+0%{top:50px; left: 200px; -webkit-transform:rotateY(0deg)}
+50%{top:0px; left: 175px; -webkit-transform:rotateY(0deg)}
+}
+
+#clawLeft{
+	position:absolute;
+	width:25px;
+	height:25px;
+	left: 0px;
+	top: 100px;
+	background: #00f500;
+    -webkit-animation: clawLeft_S2 5s infinite;
+} 
+@-webkit-keyframes clawLeft_S2{
+0%{left: 0px; -webkit-transform:rotateY(0deg)}
+50%{left: 51px; -webkit-transform:rotateY(0deg)}
+}
+
+#bottomLeft{
+	position:absolute;
+	width:50px;
+	height:25px;
+	left: 25px;
+	top: 125px;
+	background: #00f500;
+    -webkit-animation: bottomLeft_S2 5s infinite;
+} 
+@-webkit-keyframes bottomLeft_S2{
+0%{top: 125px; -webkit-transform:rotateY(0deg)}
+50%{top: -25px; -webkit-transform:rotateY(0deg)}
+}
+
+#clawRight{
+	position:absolute;
+	width:25px;
+	height:25px;
+	left: 150px;
+	top: 100px;
+	background: #00f500;
+    -webkit-animation: clawRight_S2 5s infinite;
+} 
+@-webkit-keyframes clawRight_S2{
+0%{top:100px; left: 150px; -webkit-transform:rotateY(0deg)}
+50%{top:-25px; left: 100px; -webkit-transform:rotateY(0deg)}
+}
+#bottomRight{
+	position:absolute;
+	width:50px;
+	height:25px;
+	left: 100px;
+	top: 125px;
+	background: #00f500;
+    -webkit-animation: bottomRight_S2 5s infinite;
+} 
+@-webkit-keyframes bottomRight_S2{
+0%{top:125px; left: 100px; -webkit-transform:rotateY(0deg)}
+50%{top:100px; left: 75px; -webkit-transform:rotateY(0deg)}
+}
+
+
+
+
+#space_invader_01{
+/*<offset-x> <offset-y> <blur-radius>? <spread-radius>? <color>?*/
+  box-shadow:
+    0 0 0 1em red,
+    0 1em 0 1em red,
+    -2.5em 1.5em 0 .5em red,
+    2.5em 1.5em 0 .5em red,
+    -3em -3em 0 0 red,
+    3em -3em 0 0 red,
+    -2em -2em 0 0 red,
+    2em -2em 0 0 red,
+    -3em -1em 0 0 red,
+    -2em -1em 0 0 red,
+    2em -1em 0 0 red,
+    3em -1em 0 0 red,
+    -4em 0 0 0 red,
+    -3em 0 0 0 red,
+    3em 0 0 0 red,
+    4em 0 0 0 red,
+    -5em 1em 0 0 red,
+    -4em 1em 0 0 red,
+    4em 1em 0 0 red,
+    5em 1em 0 0 red,
+    -5em 2em 0 0 red,
+    5em 2em 0 0 red,
+    -5em 3em 0 0 red,
+    -3em 3em 0 0 red,
+    3em 3em 0 0 red,
+    5em 3em 0 0 red,
+    -2em 4em 0 0 red,
+    -1em 4em 0 0 red,
+    1em 4em 0 0 red,
+    2em 4em 0 0 red;
+
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 50px auto;
+  }
+
+#space_invader_02{
+/*<offset-x> <offset-y> <blur-radius>? <spread-radius>? <color>?*/
+  box-shadow:
+    -2em 0 0 0 white,
+    2em 0 0 0 white,
+    0em 3em 0 0 white,
+    0 -1em 0 1em red,
+    0 1em 0 2em red,
+
+    -3em 1em 0 1em red,
+    3em 1em 0 1em red,
+
+    -3em -1em 0 0 red,
+    3em -1em 0 0 red,
+
+    -3em 4em 0 0 red,
+    -3em 5em 0 0 red,
+    -4em 5em 0 0 red,
+    0em 4em 0 0 red,
+    3em 4em 0 0 red,
+    3em 5em 0 0 red,
+    4em 5em 0 0 red;
+
+    background: red;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    margin: 200px auto;
+}
+
+
